@@ -1,0 +1,16 @@
+/* FEUILLE DE STYLE JAVASCRIPT - INTRODUCTION - SEMA */
+
+body {
+    background-color: aqua;
+}
+
+main {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+code {
+    color: red;
+    padding: 5px;
+}
