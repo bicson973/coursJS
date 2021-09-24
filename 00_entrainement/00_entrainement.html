@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript - Entrainement</title>
+    <script> // Script dans l'en-tête 
+        // PAGE ENTRAINEMENT SOMMAIRE
+        // 1- AFFICHAGE
+        // 2- TYPE DE DONNEES
+        // 3- CONSTANTES
+        // 4- CONCATENER
+        // 5- OPERATEURS NUMERIQUES
+        // 6- CONDITIONS
+        // 7- BOUCLES
+        // 8- FONCTIONS
+        // 9-SUPPLEMENTS
+
+        document.write('<h1>01 Entrainement Javascript<h1>');  // "Document.write" permet d'écrire directement dans la page html.
+           
+        // 1- AFFICHAGE
+
+        document.write('<h2 style="background: orange;width: 50%; color: #fff;text-align: center;">1- AFFICHAGE</h2>');
+
+        var maBoite; // On déclare une variable: "var" permet de nommer la variable. Ma variable nommer est "maBoite".
+        maBoite = 10; // On affecte une valeur ici un nombre, un "number".
+
+        let monAge = 12; //Je déclare et j'affecte en même temps.
+
+        var maBoite2 =  56;
+        
+        console.log(maBoite);
+        // console.log(maBoite2);
+        console.log(monAge);
+
+        document.write('<p>Dans la variable maBoite il y a la valeur suivante : '+maBoite+' </p>');
+
+        console.log('Un message dans le console.log');
+        console.info('un autre message dans un console.info');
+
+        alert('Ceci est un message d\'alert');
+
+        confirm('Merci de confirmer, s\'il vous plait'); 
+
+        prompt('Comment allez-vous ?');
+
+        let humeur;
+        humeur = prompt('Comment va ?')
+        console.log(humeur);
+        document.write('<p>Votre humeur ? : ' + humeur + '</p>')
+
+        let prenom;
+        prenom = prompt('Comment s\'appelle votre maman');
+        console.log(prenom);
+        document.write('<p> Comment s\'appelle votre maman ? : ' + prenom +'</p>');
+
+        if(true){ // si c'est vrai la variable s'active.
+            let nombre = 58; 
+            console.info(nombre);
+        }
+
+        let nombre2;
+        if(true){
+            nombre2 = 999;
+        }
+        console.log(nombre2);
+
+        var noteEval = 12; 
+        console.info(noteEval);
+
+        noteEval += 2; //addition d'une valeur numérique (number) avec +=
+        console.info(noteEval);
+
+
+
+
+    
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

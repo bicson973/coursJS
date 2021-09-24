@@ -12,13 +12,13 @@
             <h1>Javascript - 02 introduction</h1> <!-- On peut mettre du JS directement dans l'élément HTML, dans la balise ouvrante -->
             <button onclick="alert('Coucou papillon')">Clique sur moi</button> <!-- Le premier script affiche une alerte avec son message -->
 
-            <button onclick="(function(){ 
+            <button onclick="(function(){ // <!-- Le second script ajoute un élément p dans la page -->
                 let para = document.createElement('p');
                 para.textContent = 'hope ! un nouveau paragraphe : c\'est drôle non ?';
                 document.body.appendChild(para);
             })();">
             Ajoutez un paragraphe : Allez
-            </button> <!-- Le second script ajoute un élément p dans la page -->
+            </button> 
         </main>
         
 
