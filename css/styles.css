@@ -1,7 +1,7 @@
 /* FEUILLE DE STYLE JAVASCRIPT - INTRODUCTION - SEMA */
 
 body {
-    background-color: aqua;
+    background-color: rgb(245, 232, 214);
 }
 
 main {
@@ -11,6 +11,12 @@ main {
 }
 
 code {
+    background-color: white;
     color: red;
     padding: 5px;
 }
+
+.stabilo {
+    background-color: yellow;
+}
+
