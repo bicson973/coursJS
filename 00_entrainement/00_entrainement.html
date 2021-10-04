@@ -74,7 +74,7 @@
 
         // 2- TYPE DE DONNEES
         
-        document.write('<h2 style="background: orange;width: 50%; color: #fff;text-align: center;">2- Types de données</h2>');
+        document.write('<h2 style="background: orange;width: 50%; color: #fff;text-align: center;">2- TYPES DE DONNES</h2>');
 
         var monTexte = 'Voici une phrase pour Séma avec une \'';
         document.write('<p>' + monTexte + '</p>');
@@ -84,6 +84,35 @@
 
         document.write(typeof(monTexte) + '<br>');
         document.write(typeof(monTexte) + '<br>');
+
+         // 3- CONSTANTES
+        
+         document.write('<h2 style="background: orange;width: 50%; color: #fff;text-align: center;">3- CONSTANTES</h2>');
+
+         const neBougePas = 'Ma constante ne bouge jamais'
+         console.log(neBougePas);
+        //  neBougePas = 'coucou' 
+        //  On ne peut pas affecter une deuxieme action car c'est une constante.
+
+        // Exo - afficher avec document.write la phrase suivante dans un p avec un fond gris "La constante neBougePas "Ma constante impossible à modifier""
+
+        document.write('<p style="background: lightgrey;">La constante neBougePas contient : ' + neBougePas +'</p>');
+        console.log(neBougePas);
+
+         // 4- CONCATENER
+         document.write('<h2 style="background: orange;width: 50%; color: #fff;text-align: center;">4-CONCATENER</h2>');
+
+        //  Exo - 2 varibles nom, prenom et afficher "the name is X, X XX."
+
+       let firstname = 'Maria';
+       let lastname = 'Bond' ;
+       console.log(firstname, lastname);
+
+       document.write('<p>The name is ' + lastname + ' , ' + firstname + ' ' + lastname +'</p>');
+
+       
+        
+
 
 
 
