@@ -57,13 +57,66 @@
                     </div>
             </section>
             <hr>
-            <section> <!-- Section 2 -->
+            <section class="row mt-4 justify-content-center"> <!-- Section 2 -->
                 <div class="col-sm-12">
                     <h3>
                         Opérateurs de comparaison
                     </h3>
                     <p>
                         Comment vérifié les conditions ?
+                    </p>
+                    <table class=" table table-striped">
+                        <caption>
+                            Opérateurs de comparaison
+                        </caption>
+                        <thead>
+                            <tr>
+                                <th>Opérateur</th>
+                                <th>Définition</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <p>==</p>
+                                    <p>===</p>
+                                    <p>!=</p>
+                                </td>
+                                <td>
+                                    <p>Test l'égalité sur les valeurs</p>
+                                    <p>Test l'égalité sur les valeurs et types</p>
+                                    <p>Test la différence des valeurs</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>!==</p>
+                                </td>
+                                <td>
+                                    <p>Test la différence en valeur ou en types</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>&lt;</p>
+                                    <p>&gt;</p>
+                                    <p>&lt;=</p>
+                                    <p>&gt;=</p>
+                                </td>
+                                <td>
+                                    <p>Test si une valeur est strictement inférieure à une autre</p>
+                                    <p>Test si une valeur est strictement supérieur à une autre</p>
+                                    <p>Test si une valeur est inférieur ou égale à une autre</p>
+                                    <p>Test si une valeur est supérieur ou égale à une autre</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>
+                        Dans le cas où la comparaison est vérifié, le JS renvoie le booléen <code>true</code>, dans le cas contraire, le booléen <code>false</code> est renvoyé.
+                    </p>
+                    <p>
+                        Le JS va automatiquement comparer la valeur à gauche de l'opérateur à celle de droite selon l'opérateur de comparaison.
                     </p>
                 </div>
             </section>
