@@ -174,9 +174,33 @@
 
         document.write('<p>Vous avez saisi le chiffre : ' + votreChiffre + '<br>ce chiffre au carré est éfal à ' + auCarre + ' <br>ce chiffre au cube est égal à ' + auCube + '.</p>');
 
+        // Consigne : 
+        // Si a est supérieur à b, j'écris "a est supérieur" SINON j'écris "a n'est pas supérieur à b" dans un document write. 
 
+        let a = 2;
+        let b = 5;
+        let c = 2;
 
+        if(a > b){
+            document.write('<p>a est supérieur à b</p>');
+        } else {
+            document.write('<p>a n\'est pas supérieur à b = '+ b + '</p>');
+        }
 
+        // Consigne : 
+        // tester l'égaliter de a et b, et monter ce test dans un document.write en affichant a et b.
+
+        if(a == b) {
+            document.write('<p>Pour a qui vaut '+ a +' et b qui vaut '+ b +' : a est egal à b.</p>');
+        } else {
+            document.write('<p>Pour a qui vaut '+ a +' et b qui vaut '+ b +' : a n\'est pas égal à b.</p>');
+        }
+
+        // Consigne : 
+        // tester l'égaliter de a et b en valeur et en type. 
+        if(a === b){
+            document.write('<p>Pour a qui vaut ' + a + ' et b qui vaut ' + b + ': a et b sont égaux en valeur et type.</p>'); 
+        }
 
 
 

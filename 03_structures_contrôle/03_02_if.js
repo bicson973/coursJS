@@ -28,3 +28,9 @@ let chaine = '';
 if(chaine) {
     alert('5/ true /// vrai');
 }
+
+if((x == y) == false){
+    alert('7/ x et y ne contionnent pas la même valeur')
+}
+
+
