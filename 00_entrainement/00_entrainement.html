@@ -202,6 +202,36 @@
             document.write('<p>Pour a qui vaut ' + a + ' et b qui vaut ' + b + ': a et b sont égaux en valeur et type.</p>'); 
         }
 
+        //EXO tester la valeur de a par rapport au chiffre 5 ; inférieur ? égal ? supérieur ? ou alors c'est pas un nombre, dans une condition multiple (blocs de code>document.write)
+        if(a < 5){
+            document.write('<p> La valeur de a est inférieur à ' + b + '</p>'); 
+        } else if(a == 5){
+            document.write('<p> La valeur de a est égal à ' + b + '</p>');
+        } else if(a > 5){
+            document.write('<p> La valeur de a est supérieur à ' + b + '</p>');
+        } else {
+            document.write('a qui contient : ' + a + ' n\est pas un nombre');
+        }
+
+        // Exo : a est-il supérieur à b et b est-il supérieur à c.
+        
+        if(a > b && b > c){
+            document.write('<p> La valeur de a est supérieur à ' + b + '</p>');
+        } else {
+            document.write('<p> La valeur de b est supérieur à ' + c + '</p>');
+        }
+
+        
+        // Exo : a est supérieur à b ou b est supérieur à c.
+        
+        if(a > b || b > c){
+            document.write('<p> pour a qui vaut : ' + a + ' , et b qui vaut ' + b + ' et c qui vaut ' + c + ' ici au moins une des deux conditions est vrai </p>');
+        } else {
+            document.write('<p> pour a qui vaut : ' + a + ' , et b qui vaut ' + b + ' et c qui vaut ' + c + ' dans ce cas aucune des conditions est vrai </p>');
+        }
+
+
+
 
 
 
