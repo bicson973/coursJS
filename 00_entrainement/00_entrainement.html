@@ -230,6 +230,32 @@
             document.write('<p> pour a qui vaut : ' + a + ' , et b qui vaut ' + b + ' et c qui vaut ' + c + ' dans ce cas aucune des conditions est vrai </p>');
         }
 
+        // Exo: Récuperer dans une variable la réponse a la question suivante ; "parmi ces couleurs, le vert, le bleu, le rouge, le parme ; quelle est votre couleur préférée ?"
+        
+        let couleur; 
+        console.log(couleur);
+        couleur = prompt('Quelle est votre couleur préférée parmis le vert, le bleu, le rouge, et le parme ?');
+        alert('<p> votre couleur préférée est : ' + couleur +' </p>');
+
+        // Ensuite faites une condition if else, if else, pour afficher selon la reponse la couleur préférer de votre visiteur
+       
+        if(couleur == 'vert'){
+            document.write('<p> Votre couleur préférée est le vert </p>');
+        } else if (couleur == 'azur'){
+            document.write('<p> Votre couleur préférée est l\'azur </p>'); 
+        } else if (couleur == 'bleu'){
+            document.write('<p> Votre couleur préférée est le bleu </p>'); 
+        } else if (couleur == 'rouge'){
+            document.write('<p> Votre couleur préférée est le rouge </p>'); 
+        } else if (couleur == 'parme'){
+            document.write('<p> Votre couleur préférée est le parme </p>'); 
+        } else {
+            document.write('<p>Ah ! Tiens, vous n\'aimez ni le vert, ni l\'azur, ni le rouge, ni le parme ! Vous aimz le ' + couleur +'</p>'); 
+        }
+
+        
+
+
 
 
 

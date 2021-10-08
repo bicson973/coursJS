@@ -15,38 +15,38 @@
         <!-- Ma feuille de style CSS -->
         <link rel="stylesheet" href="../css/styles.css">
 
-        <title>Structure de contrôle - Opérateur ternaire</title>
+        <title>Structure de contrôle - Switch</title>
     </head>
     <body>
         <div class="container-fluid bg-info p-1 text-center">
             <h1 class="display-4">
-                Structure de contrôle - L'opérateur ternaire
+                Structure de contrôle - Switch
             </h1>
             <p class="lead">
-                Une autre facon d'écrire nos conditions...
+                Une autre facon d'écrire if else, if else...
             </p>
         </div>
         <div class="container">
             <section class="row mt-4"> <!-- Section 1 -->
                 <h2>
-                    Les structures cnditionnelle ternaires
+                    Switch
                 </h2>
                 <p>
-                    Les ternaires sont une autre facon d'écrire nos conditions en utilisant une syntaxe basée sur l'opérateur ternaire <code>? :</code>
+                    Avec switch on va tester autant de "cas" que l'on souhaite ou des situations, c'est une alternative au if... else if... else
                 </p>
                 <hr>
                 <div class="col-sm-12">
                     <h3>
-                        1/ Ecriture
+                        1/ Plus clair, mais...
                     </h3>
                     <p>
-                        On peut écrire la condition sur une ligne
+                        Attention switch ne supporte pas les opérateurs de supériité ou d'infériorité.
                     </p>
                     <p>
-                        Ex: <code>document.getelementById('p4').innerHTML = y > 10 ?' y est supérieur à 10 : 'y est inférieur à 10';</code>
+                        Cette structure est parfois plus clair qu'un if... else contentant des dizaines de else if. Mais il est préférable de bien comprendre les conditions en if...else avant de s'en servir.
                     </p>
                     <p>
-                        Les ternaires se présentent sous la forme suivante : <code>test ? code à exécuter si true : code à excuter sinon</code>
+                        
                     </p>
                 </div>
                 <div class="col-sm-12">
@@ -83,6 +83,6 @@
             crossorigin="anonymous"></script>
 
         <!-- Mes scripts JS en externe -->
-        <script src="03_07_ternaires.js" async></script>
+        <script src="03_08_switch.js" async></script>
     </body>
 </html>
