@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>EXOS</title>
+        <script>
+            // Exercice 1 : Déclaration des variables. 
+            // Num qui contient le nombre 255
+            // txt qui contient la chaîne de caractères 255
+            // bin (binaire) qui contient la valeur Booleenne vrai 
+            // flt (flottant) qui contient la valeur 7,23
+            // Affichez les contenus des variables dans des console.log 
+
+            let num = 255;
+            console.info(typeof num, num);
+
+            let txt = '255'; 
+            console.info(typeof txt, txt);
+
+            let bin = true;
+            console.info(typeof bin, bin);
+
+            let flt = 7.23; 
+            console.info(typeof flt, flt);
+
+            // Exercice 2 : Appliquez à num l'opérateur d'incrémentation (ce qui doit donner 256) : 
+            num++;
+            console.log(num);
+
+            // Concaténez à la chaine txt la chaine suivante : "est ici une chaine de caractères." et la concaténation dans un document.write
+            document.write(txt + ' est une chaine de caractère')
+            console.log(txt)
+
+            // Inversez la valeur logique de bin 
+            bin = false; 
+            console.log(bin); 
+
+            let bin2 = true;
+            console.log(bin2);
+
+            bin2 = !bin2;
+            console.log(bin2)
+            
+            // Ajoutez à flt la valeur contenue dans num.
+            flt += num
+            console.log(flt);
+            
+        </script>
+    </head>
+    <body>
+        <h1>
+            Exercice Javascript - fichier 01_exos.html
+        </h1>
+        
+    </body>
+</html>

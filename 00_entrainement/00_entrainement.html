@@ -287,8 +287,32 @@
             w1++;
         }
 
+        // Exercice For : Pour une variable for1 inférieur ou égale à 10 bouclz et incrémentez. 
         
+        for(let for1 = 0; for1 < 10; for1++){ /* initialisation de la variable -> test ou condition de sortie -> incrémentation */
+        document.getElementById('p1').innerHTML += 'La variable i contient : ' + for1 + ' à chaque passage de la boucle <br>';
+        console.info(typeof for1, for1);
+        }
 
+        // Exercice 2 : Une boucle for2 inférieur ou égale à 10 bouclez et incrémentez. Puis avec if else on rajoute à la fin de la boucle la phrase "et la boucle se termine là."
+
+        for(let for2 = 0; for2 < 10; for2++){
+            if(for2 == 10){
+                document.write('et la boucle se termine là car for2 arrive à ' + for2);
+            } else{
+                document.write('for2 contient ' + for2 + '<br>');
+            }
+        }
+
+        for(let for3 = 0; for3 <= 10; for3++){
+            if(for3 < 10){
+                document.write('for3 contient ' + for3 + '<br>');
+            } else{
+                document.write('et la boucle se termine là car for3 arrive à ' + for3);
+            }
+        }
+
+    
 
 
 
