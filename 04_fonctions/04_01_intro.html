@@ -5,13 +5,15 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- Bootstrap CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <title>JS - Fonctions</title>
     </head>
+
     <body>
         <div class="container-fluid bg-info p-4 text-center">
             <h1 class="display-4">
-              Javascript - Fonctions   
+                Javascript - Fonctions
             </h1>
             <p class="lead">
                 Les fonctions en JS sont incontournables
@@ -24,10 +26,13 @@
                     1- Les fonctions prédéfinies
                 </h2>
                 <p>
-                    Une fonction est un bloc de code nommé et réutilisable, et dont le but est d'effectuer une tâche précise ; les fonctions possèdent de nombreux atouts.
+                    Une fonction est un bloc de code nommé et réutilisable, et dont le but est d'effectuer une tâche précise
+                    ; les fonctions possèdent de nombreux atouts.
                 </p>
                 <p>
-                    Il existe des fonction "prédéfinies" telle que <code>random()</code> qui est une fonction "mathématique" qui appartient à l'objet Math, <code>replace()</code> une fonction "string" qui appartient à l'objet String.
+                    Il existe des fonction "prédéfinies" telle que <code>random()</code> qui est une fonction "mathématique"
+                    qui appartient à l'objet Math, <code>replace()</code> une fonction "string" qui appartient à l'objet
+                    String.
                 </p>
                 <div>
                     <h6>
@@ -37,18 +42,92 @@
 
                     </p>
                     <p>
-                        Le nom d'une fonction est suivi d'un couple de parenthèses qui contiennent les plus souvent des arguments ex. <code>replace()</code> le premier argument de replace() est la chaîne de caractères que l'on cherche et le second est celle qui va la remplacer.
+                        Le nom d'une fonction est suivi d'un couple de parenthèses qui contiennent les plus souvent des
+                        arguments ex. <code>replace()</code> le premier argument de replace() est la chaîne de caractères
+                        que l'on cherche et le second est celle qui va la remplacer.
                     </p>
                     <p id="p2">
 
                     </p>
                 </div>
+                <hr>
+                <div>
+                    <h2>
+                        2- Les fonctions personnalisées
+                    </h2>
+                    <p>
+                        Exemples : <code>Multiplication</code>
+                    </p>
+                    <p>
+                        Ce premier exemple de création de fonction a pour but de nous montrer que l'on peut exécuter une
+                        fonction à l'interieur d'une autre fonction <code>randomFois100()</code>
+                    </p>
+                    <p id="p3">
+
+                    </p>
+                    <p id="p4">
+
+                    </p>
+                    <p>
+                        Exemples : <code>Soustraction</code>
+                    </p>
+                    <p id="p5">
+
+                    </p>
+                    <p>
+                        Exemples : <code>Addition</code>
+                    </p>
+                    <p id="p6">
+
+                    </p>
+                    <p>
+                        Exemples : <code>division</code>
+                    </p>
+                    <p id="p7">
+
+                    </p>
+                    <p>
+                        Exemples : <code>modulo</code>
+                    </p>
+                    <p id="p8">
+
+                    </p>
+                </div>
+                <hr>
+                <div>
+                    <h2>Récapitulatif sur les fonctions</h2>
+                    <p>
+                        Les fonctions sont des blocs de code nommés et réutilisables et dont le but est d’effectuer une
+                        tâche précise ;
+                    </p>
+                    <ul>
+                        <li>
+                            Il existe 2 types de fonctions en JS : les fonctions natives ou prédéfinies (ou des méthodes)
+                            qu'on n'aura qu'à appeler et les fonctions personnalisées qu'on va créer
+                        </li>
+                        <li>
+                            Pour exécuter le code d'une fonction il faut l'appeler. Pour cela, il suffit d'écrire son nom
+                            suivi de parenthèses en passant éventuellement des arguments dans les parenthèses.
+                        </li>
+                        <li>
+                            On crée une fonction personnalisée grâce au mot-clef "function" :
+                        </li>
+                        <li>
+                            Si une fonction a besoin qu'on lui passe des valeurs pour fonctionner, alors on définira des
+                            paramètres lors de sa définition.
+                        </li>
+                        <li>
+                            Lors de son appel, on lui passera des arguments qui prendront la place des paramètres.
+                        </li>
+                    </ul>
+                </div>
 
             </section>
         </div>
-
         <!-- Bootstrap Bundle with Popper -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
         <!-- Ma feuille JS externe -->
         <script src="04_01_intro.js" async> </script>
     </body>
