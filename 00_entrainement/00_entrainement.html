@@ -457,16 +457,19 @@
         function quelleEcole(age){
             if(age < 6){
                 document.write('<p>Votre enfant qui a : ' + age + ' doit avoir plus de 6 ans pour rentrer à l\'école.</p>');
-            } else if(age =< 6 && 12){
+            } else if(age >= 6 && age < 11){
                 document.write('<p>Votre enfant qui a : ' + age + ' va en primaire.</p>');
-            } else if(age =< 11 && 16){
+            } else if(age >= 11 && age < 15){
                 document.write('<p>Votre enfant qui a : ' + age + ' va au collège.</p>');
-            } else if(age =< 15 && 19){
+            } else if(age >= 15 && age < 18){
                 document.write('<p>Votre enfant qui a : ' + age + ' va au lycée.</p>');
             } else{
-                return alert('<p>Votre enfant qui a : ' + age + '  n\'est pas en âge scolaire</p>');
+                var ecole = document.write('<p>Votre enfant qui a : ' + age + '  n\'est pas en âge scolaire</p>');
             }
+            return ecole;
         }
+
+        quelleEcole(age); /* On appelle la fonction */
 
 
 
