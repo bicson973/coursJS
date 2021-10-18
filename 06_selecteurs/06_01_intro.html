@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+        <!-- Font icons Bootstrap -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+        <!-- Ma feuille de style CSS -->
+        <link rel="stylesheet" href="../css/styles.css">
+        <title>Les sélecteurs</title>
+    </head>
+    <body>
+        <div class="container-fluid bg-info p-1 text-center">
+            <h1 id="titreN1" class="display-4">
+                Les sélecteurs
+            </h1>
+            <p class="lead">
+               Les sélecteurs en JS 
+            </p>
+        </div>
+        <div class="container p-4">
+            <section class="row mt-4">
+                <div class="col-12">
+                    <h2 id="titreN2">
+                        Ce titre sera selectionné dans la console (avec querySelector)
+                    </h2>
+                </div>
+                <div class="col-3">
+                    <h2 id="a-changer">
+                        Ce titre va changer
+                    </h2>
+                    <p class="ma-classe">Paragraphe 1</p>
+                </div>
+                <div class="col-3">
+                    <p class="ma-classe">Paragraphe 2</p>
+                </div>
+                <div class="col-3">
+                    <p class="">Parapgraphe 3</p>
+                </div>
+                <div class="col-3">
+                    <p class=""></p>
+                </div>
+            </section>
+            <section class="row mt-4">
+                <div class="col-6">
+                    <p class="ma-classe">
+                        Une phrase dans ce paragraphe.
+                    </p>
+                </div>
+            </section>
+        </div>
+        <!-- Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+        <!-- Mes scripts JS en externe -->
+        <script src="selecteur.js" async></script>
+        <script>
+            var select2 = titreN1;
+            console.log(select2); 
+
+            var select3 = document.getElementById('titreN1'); /*  */
+            console.log(select3);
+
+            var selectClass = document.getElementsByClassName('ma-classe');
+            console.log(selectClass);
+
+            console.log(selectClass[1]); /* Avec l'indice du tableau je sélectionne le second (indice 1) des éléments qui ont la classe ma-classe */
+
+            selectClass[1].innerHTML = 'Et là je change le contenu de ce paragraphe.'
+
+            // Exo : modifiez le contenu du h2 #a-changer, et mettre le texte suivant "2- youpi j'ai changé le titre du h2"
+            var selectid = document.getElementById('a-changer');
+            console.log(selectid);
+
+            selectid.innerHTML = '2- youpi j\'ai changé le titre du h2.'
+
+            var selectP = document.getElementsByTagName('p');
+            console.log(selectP)
+
+            // modification du style d'un élément 
+            selectP[0].style.backgroundColor = "pink";
+            selectP[2].style.fontVariant = "small-caps";
+            selectP[0].style.borderRadius = "80px";
+            select3.style.backgroundColor = "olive";
+
+            // Changer un paramètre de style de tous les p
+            for(var i = 0; i < selectP.length; i++){
+                selectP[i].style.backgroundColor = "gray"; 
+            }
+
+            selectP[0].classList.add('bg-success');
+            selectP[0].classList.add('m-4');
+
+
+        </script>
+    </body>
+</html>
