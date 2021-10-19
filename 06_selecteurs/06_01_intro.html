@@ -13,13 +13,14 @@
         <link rel="stylesheet" href="../css/styles.css">
         <title>Les sélecteurs</title>
     </head>
+
     <body>
         <div class="container-fluid bg-info p-1 text-center">
             <h1 id="titreN1" class="display-4">
                 Les sélecteurs
             </h1>
             <p class="lead">
-               Les sélecteurs en JS 
+                Les sélecteurs en JS
             </p>
         </div>
         <div class="container p-4">
@@ -51,15 +52,25 @@
                         Une phrase dans ce paragraphe.
                     </p>
                 </div>
+                <div class="col-6">
+                    <p class="une-classe">
+                        Paragraphe 4
+                    </p>
+                    <p class="une-classe">
+                        Paragraphe 5
+                    </p>
+                </div>
             </section>
         </div>
         <!-- Bootstrap Bundle with Popper -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+            crossorigin="anonymous"></script>
         <!-- Mes scripts JS en externe -->
         <script src="selecteur.js" async></script>
         <script>
             var select2 = titreN1;
-            console.log(select2); 
+            console.log(select2);
 
             var select3 = document.getElementById('titreN1'); /*  */
             console.log(select3);
@@ -87,12 +98,33 @@
             select3.style.backgroundColor = "olive";
 
             // Changer un paramètre de style de tous les p
-            for(var i = 0; i < selectP.length; i++){
-                selectP[i].style.backgroundColor = "gray"; 
+            for (var i = 0; i < selectP.length; i++) {
+                selectP[i].style.backgroundColor = "gray";
             }
 
             selectP[0].classList.add('bg-success');
             selectP[0].classList.add('m-4');
+
+            // 6- avec queryselector : ici je selectionne un ou des éléments par une classe
+            let query2 = document.querySelectorAll('.une-classe');
+            console.log(query2); 
+
+            let query3 = document.querySelectorAll('li');
+            console.log(query3); 
+            query3[3].style.backgroundColor = "olive"; 
+
+            let query4 = document.querySelectorAll('li.bg-primary');
+            console.log(query4); 
+
+            // Exercie : Dans une nouvelle col rajoutez 4 ou 6 paragraphes avec la classe .selectclasse puis sélectionnez ces paragraphes dans une variable query5. Puis changer l texte du p n°2 pour "je change le texte de ce paragraphe 2" passez le en fond "lightblue" et texte blanc et en gras
+
+            let query5 = document.querySelectorAll('.selectClasse');
+            console.log(query5);
+
+
+
+
+
 
 
         </script>
