@@ -1,0 +1,19 @@
+/* FEUILLE De STYLE - AUJOURDH'HUI - SEMA */
+
+body{
+    background-color: rgb(219, 161, 236);
+}
+
+main{
+    width: 60%;
+    height: 300px;
+    margin: auto;
+    border-radius: 30px;
+    background-color: #fff;
+}
+
+h1{
+    text-align: center;
+    border-radius: 30px;
+    background-color: rgb(1, 247, 255);
+}
