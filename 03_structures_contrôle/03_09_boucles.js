@@ -22,7 +22,6 @@ do {
     document.getElementById('dowhile1').innerHTML += 'do... while // w3 contient la valeur ' + w3 + ' <br>';
     w3++;
 }
-
 while(w3 < 10);     
 
 // Incrémentation et décrémentation 

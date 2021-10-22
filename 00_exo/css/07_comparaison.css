@@ -1,0 +1,28 @@
+/* FEUILLE DE STYLE CSS - COMPARAISON - SEMA */
+
+body {
+    text-align: center;
+    background-color: rgb(242, 170, 248);
+}
+
+main {
+    width: 60%;
+    height: 300px;
+    margin: auto;
+    border-radius: 30px;
+    background-color: #fff;
+}
+
+h1 {
+    position: relative;
+    top: 10px;
+    border-radius: 30px;
+    background-color: rgb(151, 216, 253);
+}
+
+#p1 {
+    width: 50%;
+    margin: auto;
+    border-radius: 10px;
+    background-color: rgb(255, 238, 0);
+}
