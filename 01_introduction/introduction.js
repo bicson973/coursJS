@@ -20,3 +20,4 @@ function ajout(){
     para.textContent = 'Paragraphe ajouté';
     document.body.appendChild(para);
 }
+
