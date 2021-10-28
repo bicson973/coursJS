@@ -1,0 +1,110 @@
+/* FEUILLE DE STYLE - INDEX CORRECTION - SEMA */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.row {
+    width: 70%;
+    margin: auto;
+}
+
+h1, h2, blockquote, figcaption {
+    font-family: 'Aclonica', sans-serif;
+}
+
+header {
+    background: url(../img/header.png);
+    height: 140px;
+}
+
+header h1 a {
+    color: white;
+}
+
+header h1 a span {
+    color: orange
+}
+
+header h1 a:hover {
+    color: white;
+}
+
+header nav a {
+    margin-left: 15px;
+    padding: 10px 15px;
+    border-radius: 20px;
+    color: white;
+    transition: 1s ease;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    color: white;
+    background-color: orange;
+}
+
+blockquote {
+    height: 150px;
+    padding-top: 25px;
+    color: orange;
+    background: url(../img/quote-open.png) no-repeat, url(../img/quote-close.png) no-repeat bottom right;
+}
+
+blockquote p {
+    font-size: 1.5em;
+}
+
+.bg-gris {
+    background-color: lightgray; 
+}
+
+h2 {
+    text-transform: uppercase;
+    margin-bottom: 0;
+    font-size: 1.1em;
+    line-height: 1.5em;
+}
+
+section p {
+    line-height: 20px;
+}
+
+section figure img {
+    border: 2px solid gray;
+    padding: 5px;
+}
+
+figcaption {
+    text-transform: uppercase;
+}
+
+figcaption span {
+    text-transform: capitalize;
+    font-style: italic;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: smaller;
+}
+
+footer {
+    text-align: center;
+    height: 210px;
+    color: white;
+    background-color: black;
+}
+
+.infos address {
+    line-height: 17px;
+    font-style: italic;
+}
+
+.reseaux i {
+    font-size: 2em;
+    padding: 10px;
+    color: gray;
+    transition: 1s ease;
+}
+
+.reseaux i:hover {
+    color: orange;
+}
