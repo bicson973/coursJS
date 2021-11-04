@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/toggle.css">
+    <title>Javascript - 08_06_FORMULAIRE</title>
+</head>
+
+<body>
+    <!-- =================================== En-tête de la page =================================== -->
+    <header class="container-fluid bg-light p-5 text-center">
+        <h1>JavaScript - Formulaire</h1>
+        <p>2 formulaires</p>
+    </header>
+    <!-- =================================== Contenu Principal de la page =================================== -->
+    <div class="container p-4">
+        <section class="row mt-4 border border-danger p-4">
+            <div class="col-5">
+                <h2>Formulaire 1</h2>
+                <p>Fonction controlForm()</p>
+            </div>
+            <div class="col-7">
+                <form class="row g-3" method="get" name="form1">
+                <!-- get récupérer dans l'url / post envoie en méthode post -->
+                    <div class="col-auto">
+                        <label for="pseudo" class="visually-hidden">Votre pseudo</label>
+                        <input type="text" class="form-control" name="pseudo" id="pseudo" placeholder="Votre pseudo">
+                      </div>
+                    <div class="col-auto">
+                      <label for="password1" class="visually-hidden">Mot de passe</label>
+                      <input type="password" class="form-control" name="password1" id="password1" placeholder="Mot de passe" required>
+                    </div>
+                    <div class="col-auto">
+                      <button type="submit" id="submit1" value="ok" class="btn btn-primary mb-3" onclick="controleForm()">Se connecter</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <!-- PARTIE FORMULAIRE 1 -->
+        <section class="row mt-4 border border-success p-4">
+            <div class="col-md-5" >
+                <h2>Formulaire 2</h2>
+                <p>Formulaire d'inscription</p>
+            </div>
+            <div class="col-7">
+                <form action="#" method="post" name="inscription" id="formulaireInscription" class="row g-3">
+                    <div class="col-12">
+                      <label for="prenom" class="form-label">Prénom *</label>
+                      <input type="text" class="form-control" name="prenom" id="prenom">
+                    </div>
+                    <div class="col-12">
+                        <label for="nom" class="form-label">Nom *</label>
+                        <input type="text" class="form-control" name="nom" id="nom">
+                    </div>
+                    <div class="col-12">
+                        <label for="email" class="form-label">Email *</label>
+                        <input type="text" class="form-control" name="email" id="email">
+                    </div>
+                    <div class="col-12">
+                      <label for="password2" class="form-label">Choisissez votre mot de passe *</label>
+                      <input type="password" class="form-control" name="password2" id="password2">
+                    </div>
+                    <div class="col-12">
+                        <label for="repassword2" class="form-label">Retapez votre mot de passe *</label>
+                        <input type="password" class="form-control" name="repassword2" id="repassword2">
+                    </div>
+                    <div class="col-6">
+                      <button type="submit" id="submit2" value="inscription" class="btn btn-primary">Je m'inscris</button>
+                      <button id="resetForm" class="btn btn-danger">Effacer</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <!-- PARTIE FORMULAIRE 2 -->
+    </div>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap Bundle with Popper -->
+    
+    <script src="08_06_formulaire.js"></script>
+    <!-- Mes scripts JS en externe -->
+</body>
+
+</html>
