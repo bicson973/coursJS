@@ -1,0 +1,13 @@
+/* FEUILLE DE STYLE CSS - 08_06_FORMULAIRE - SEMA  */
+
+.error {
+    border: 5px solid red;
+}
+
+.valide {
+    border: 5px solid greenyellow;
+}
+
+.rouge {
+    color: red;
+}
