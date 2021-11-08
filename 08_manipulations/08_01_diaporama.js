@@ -4,8 +4,8 @@
 // DIAPORAMA 2
 
 document.getElementById('btn-diapo2').addEventListener('click', function(){
-    document.getElementById('img-diapo2').src = 'img/piscine2.jpg';
-    document.getElementById('img-diapo2').alt = 'Une piscine à paris';
+    document.getElementById('img-diapo2').src = 'img/chat_2.jpg';
+    document.getElementById('img-diapo2').alt = 'Maki';
 });
 console.log('btn-diapo2');
 
