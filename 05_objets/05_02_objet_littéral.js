@@ -19,7 +19,7 @@ document.getElementById('p3').innerHTML = 'Email : ' + victor.email;
 
 victor.age = 80; /* On modifie la valeur de age */
 console.log(typeof victor, victor);
-
+document.ge
 document.getElementById('p4').innerHTML = 'Nouvelle age : ' + victor.age + ' ans.';
 
 victor.metier = 'écrivain, dramaturge et poète';
